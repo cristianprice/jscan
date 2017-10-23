@@ -1,0 +1,22 @@
+{
+  "name": "jscan",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://cristianprice@github.com/cristianprice/jscan.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cristianprice/jscan/issues"
+  },
+  "homepage": "https://github.com/cristianprice/jscan#readme",
+  "dependencies": {
+    "cassandra-driver": "^3.3.0"
+  }
+}
