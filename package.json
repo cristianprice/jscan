@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/cristianprice/jscan#readme",
   "dependencies": {
-    "cassandra-driver": "^3.3.0"
+    "cassandra-driver": "^3.3.0",
+    "color-logs": "^0.6.1",
+    "sqlite3": "^3.1.13"
   }
 }
