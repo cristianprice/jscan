@@ -15,6 +15,26 @@ client.on('log', (level, className, message, furtherInfo) => {
     logger.info(`[${level}] ${message}`);
 });
 
+const options = {
+    'contactPoints': ['10.11.1.131', '10.11.1.133'],
+    'keyspace': 'woow_backend',
+    'tables': [{
+        name: 'user_log',
+        fetchSize: 500,
+        indexes: [{
+            'columns': ['time', 'actual_user'],
+            'unique': false
+        }]
+    }, {
+        name: 'accounts',
+        fetchSize: 500
+    }],
+    'fetch': ['parallel', 'sequential'],
+    'sqlPath': ':memory:',
+    'interactive': true
+};
+
+
 client.connect().then(() => {
 
     let mirror = new Mirror({
