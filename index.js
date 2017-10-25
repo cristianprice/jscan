@@ -24,7 +24,8 @@ const options = {
         indexes: [{
             'columns': ['time', 'actual_user'],
             'unique': false
-        }]
+        }],
+        skipColumns: ['time']
     }, {
         name: 'accounts',
         fetchSize: 500
